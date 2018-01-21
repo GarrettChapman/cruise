@@ -15,7 +15,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body, html {
     min-height: 100%;
 }
 
-/* Second image (Portfolio) */
+/* Second image (Rooms) */
 .bgimg-2 {
     background-image: url("http://asiarewards.net/wp-content/uploads/2017/02/1348113_362_z.jpg");
     min-height: 400px;
@@ -36,7 +36,12 @@ body, html {
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("https://images.unsplash.com/photo-1487793932266-b2bb46369926?auto=format&fit=crop&w=1070&q=80");
+    background-image: url("file:///Users/zerocool/Library/Containers/com.apple.mail/Data/Library/Mail%20Downloads/31AB4A71-E33C-4C42-8050-171E26B4E5A2/246-views-3-hotel-barcelo-maya-colonial_tcm21-35646.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url( "https://images.unsplash.com/photo-1487793932266-b2bb46369926?auto=format&fit=crop&w=1070&q=80");
     min-height: 400px;
 }
 
@@ -45,7 +50,7 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
         background-attachment: scroll;
     }
 }
@@ -60,7 +65,8 @@ body, html {
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-calendar"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> ROOMS</a>
+    <a href="#rooms" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i>ROOMS</a>
+    <a href="#payment" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-credit-card-alt"></i>PAYMENT</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> REGISTRATION</a>
     <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
@@ -70,9 +76,10 @@ body, html {
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">ROOMS</a>
+    <a href="#rooms" class="w3-bar-item w3-button" onclick="toggleFunction()">ROOMS</a>
+    <a href="#payment" class="w3-bar-item w3-button" onclick="toggleFunction()">PAYMENT</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">REGISTRATION</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
   </div>
 </div>
 
@@ -80,33 +87,41 @@ body, html {
 <div class="bgimg-1 w3-display-container " id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <!-- <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span> -->
-    <img src="http://paycationpro.yolasite.com/resources/Traverus%20Global%20Logo-01.png.opt495x198o0%2C0s495x198.png" class="w3-center w3-padding-large w3-#00000014 w3-border-radius
-     w3-xlarge w3-wide w3-animate-opacity" alt="">
+    <!-- <img src="http://paycationpro.yolasite.com/resources/Traverus%20Global%20Logo-01.png.opt495x198o0%2C0s495x198.png" class="w3-center w3-padding-large w3-#00000014 w3-border-radius
+     w3-xlarge w3-wide w3-animate-opacity" alt=""> -->
+     <img src="file:///Users/zerocool/Downloads/14e5d9b0-15f5-469a-a28b-fddbc614edcf.png" class="w3-center w3-padding-large w3-#00000014 w3-border-radius
+      w3-xlarge w3-wide w3-animate-opacity" alt="">
   </div>
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">Trip Information</h3>
+<div class="w3-content w3-container w3-padding-64 w3-center" id="about">
+  <h1 class="w3-center">Trip Information</h1>
   <!-- <p class="w3-center"><em>I love photography</em></p> -->
-  <p>Barceló Maya Colonial
-Riviera Maya, Mexico
+  <p>Cancun Paycation Experience 2018 | Barcelo Maya Palace and Barcelo Maya Colonial and Tropical – Riviera Maya, QR, Mexico
+    <br> Date: 06/21/2018 - 06/24/2018 | Duration: 3 nights</p>
+
+<br>
+<br>
+
+<h3>RESORT INFORMATION</h3>
+
 Mexican essence in a vacation hotel with luxury services and excellent facilities. What more can you ask for?
-
-The Barceló Maya Colonial 5-Star hotel enjoys a privileged location along one of the most impressive beaches in the world; a unique shore in the Riviera Maya extending 1.2 miles, perfect for disconnecting from your daily routine.
-
-Not only does the hotel feature excellent Superior and Family rooms, it also offers Premium Level Junior Suite and Suite rooms (Premium Level Ocean Front Junior Suite and Premium Level Ocean Front Suite), designed to provide an unbeatable stay with the exclusive benefits provided by this exclusive program. The hotel also features an incredible U-Spa with an original U-Kids Spa.
-
-The All Inclusive program offers snacks and drinks 24 hours a day, as well as access to the hotel’s 4 restaurants. These include 2 specialty restaurants, one buffet and one snack-grill restaurant, as well as 3 bars strategically located around the hotel.
-
-The excellent All-Inclusive program also allows you to enjoy the sports facilities and pools, and also grants you access to the many bars and restaurants in the resort’s 4 hotels. The hotel’s vibrant night life offers live shows in the theater and disco.
-
+<br>
+The Barceló Maya Tropical 5-star hotel is an oasis of fun and relaxation in the heart of Caribbean paradise. This luxury resort offers an extraordinary All-Inclusive experience. The fantastic hotel facilities feature green areas, a pool with hot tub, kid’s zones, games pool, gym, shopping center and an excellent U-Spa. Kids can also relax at the U-Kids Spa, and all guests can participate in sports like tennis, paddle tennis, basketball, snorkeling, kayaking or windsurfing. At night, they can enjoy the lively nightlife at the hotel.
+<br>
+Located on one of the most impressive beaches of the Caribbean and surrounded by the legendary beauty of the Riviera Maya, the Barceló Maya Palace 5-star hotel is a spectacular luxury resort with exclusive services. All of its rooms are Junior Suites or Suites, all of which offer luxury details and comforts to guarantee an extraordinary experience.
+<br>
+Who wouldn’t want to spend a few days in a resort with the Caribbean Sea as the backdrop?
 </p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
+
+<br>
+<br>
+  <div class="w3-row w3-center">
+    <!-- <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class=""></i></b></p><br>
       <img src="http://paycationpro.yolasite.com/resources/Traverus%20Global%20Logo-01.png.opt495x198o0%2C0s495x198.png" class="w3-round w3-image w" alt="Photo of Me" width="500" height="333">
-    </div>
+    </div> -->
 
     <!-- <div class="">
       <img src="http://paycationpro.yolasite.com/resources/Traverus%20Global%20Logo-01.png.opt495x198o0%2C0s495x198.png" alt="">
@@ -117,29 +132,181 @@ The excellent All-Inclusive program also allows you to enjoy the sports faciliti
       <p></p>
     </div> -->
 
-    <div class="">
-      <p>GENERAL INFORMATION:
+
+    <h1> Iternerary and Events</h1>
+
+    <table class="w3-table w3-striped w3-centered ">
+<tr class='w3-blue'>
+  <th>Day</th>
+  <th>Events</th>
+  <!-- <th>Points</th> -->
+</tr>
+<tr>
+  <td>Thursday   06/21/2018
+    <br>
+      Friday        06/22/2018
+    <br>
+      Saturday   06/23/2018
+    <br>
+      Sunday      06/24/2018
+  </td>
+  <td>Hotel check-in      3:00pm
+    <br>
+    Meeting                 8:00am – 12:00pm
+    Cocktail Party       7:30pm – 8:
+    <br>
+    Farewell Dinner   7:00pm
+    <br>
+    Hotel check-out   11:00am
 
 
-The best way to contact Xstream Travel is to email: emilyspeers@xstreamtravel.com with any cruise inquiries!
+
+  </td>
+  <!-- <td>50</td> -->
+</tr>
+</table>
+  </div>
+
 <br>
-Excellent Caribbean Sea beachfront location
+
+
+  <div class=" w3-center  w3-content w3-container w3-padding-64" id="rooms">
+    <table class="w3-table w3-striped ">
+<h1>Barcelo Maya Tropical / Colonial</h1>
+<h6>Room Category And Pricing: All Prices Based On Occupancy</h6>
+<tr class='w3-blue'>
+  <th>Room Category</th>
+  <th>Single (1 ADULT)</th>
+  <th>Double (2 ADULTS)</th>
+  <th>Triple (3 ADULTS)</th>
+  <th>Child 2-12</th>
 <br>
-The hotel boasts an excellent and unique location on the beach. Considered one of the most beautiful in Mexico.
+</tr>
+<tr>
+  <td>SUPERIOR
+
+  </td>
+    <td>$537.00</td>
+    <td>$348.00 PER PERSON</td>
+    <td>$339.00 PER PERSON</td>
+    <td>$68.00 PER CHILD</td>
+
+
+
+</tr>
+
+<tr>
+  <td>*Cost Per Additional Night</td>
+  <td>$179.00</td>
+  <td>$116.00 PER PERSON</td>
+  <td>$113.00 PER PERSON</td>
+  <td>$68.00 PER CHILD</td>
+</tr>
+
+<tr>
+  <td>JUNIOR SUITE OCEAN FRONT PREMIUM LEVEL</td>
+  <td>$849.00</td>
+  <td>$528.00 PER PERSON</td>
+  <td>$519.00 PER PERSON</td>
+  <td>N/A</td>
+</tr>
+
+<td>*Cost Per Additional Night</td>
+<td>$283.00</td>
+<td>$176.00 PER PERSON</td>
+<td>$173.00 PER PERSON</td>
+<td>N/A</td>
+</tr>
+
+
+</table>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="w3-center">
+    <table class="w3-table w3-striped">
+<h1>Barcelo Maya Palace</h1>
+<h6>Room Category And Pricing: All Prices Based On Occupancy</h6>
+<tr class='w3-blue'>
+  <th>Room Category</th>
+  <th>Single (1 ADULT)</th>
+  <th>Double (2 ADULTS)</th>
+  <th>Triple (3 ADULTS)</th>
+  <th>Child 2-12</th>
 <br>
-Excellent restaurants
+</tr>
+<tr>
+  <td>JUNIOR SUITE
+
+  </td>
+    <td>$702.00</td>
+    <td>$513.00 PER PERSON</td>
+    <td>$504.00 PER PERSON</td>
+    <td>$90.00 PER CHILD</td>
+
+
+
+</tr>
+
+<tr>
+  <td>*Cost Per Additional Night</td>
+  <td>$234.00</td>
+  <td>$171.00 PER PERSON</td>
+  <td>$168.00 PER PERSON</td>
+  <td>$90.00 PER CHILD</td>
+</tr>
+
+<td>JUNIOR SUITE POOL VIEW PREMIUM LEVEL</td>
+
+<td>$1,014.00</td>
+<td>$696.00 PER PERSON</td>
+<td>$687.00 PER PERSON</td>
+<td>N/A</td>
+
+<tr>
+  <td>*Cost Per Additional Night</td>
+  <td>$338.00</td>
+  <td>$232.00 PER PERSON</td>
+  <td>$229.00 PER PERSON</td>
+  <td>N/A</td>
+</tr>
+
+<td>JUNIOR SUITE OCEAN FRONT PREMIUM LEVEL</td>
+
+<td>$1,152.00</td>
+<td>$765.00 PER PERSON</td>
+<td>$756.00 PER PERSON</td>
+<td>N/A</td>
+
+<tr>
+  <td>*Cost Per Additional Night</td>
+  <td>$384.00</td>
+  <td>$255.00 PER PERSON</td>
+  <td>$252.00 PER PERSON</td>
+  <td>N/A</td>
+</tr>
+
+
+
+</table>
+  </div>
 <br>
-The Barceló Maya Colonial offers an extensive and varied culinary selection that includes 4 restaurants with international and local cuisine.
-<br>
-Magnificent U-Spa
-<br>
-The health and wellness center of the hotel offers great treatments. A perfect space for inner and outer renewal.
-<br>
-New 18-hole minigolf
-<br>
-Golf lovers can enjoy stunning facilities designed for the entire family.
-</p>
-    </div>
+  <div class="">
+    <p>Inclusions of the above rates:
+Hotel accommodations for June 21, 2018 through June 24, 2018
+All-Inclusive meal plan
+Taxes and gratuities
+
+Please note:
+Child rates are only valid when a minimum of 2 paying ADULTS are sharing the room
+Mandatory round-trip shared ride transfer rate of $38.00 PER PERSON is NOT included in the hotel rate quoted above.
+You MUST add the above transfer rate to your per personal total hotel stay – $38.00 PER PERSON WILL be added to your total package price.
+A valid passport is required for each person travelling to Mexico
+
+*All rates are based on US dollars and are only valid for citizens of the United States. Prior notification of any NON-US citizens travelling with the group will be required and may be subject to increased rates.
+*All room bedding requests are based on availability at time of check-in and are NOT GUARANTEED. Only bedding requests that are guaranteed are those room categories that specify the bedding in the name of the room category when purchased (i.e. Deluxe Double Room or Deluxe King Bed Room).</p>
   </div>
   <!-- <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
   <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
@@ -158,8 +325,8 @@ Golf lovers can enjoy stunning facilities designed for the entire family.
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150 Rooms</span><br>
-    <!-- Rooms -->
+    <span class="w3-xlarge">Cocktail Party</span><br>
+    <!-- ROOMS -->
   </div>
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">Black Tie Dinner</span><br>
@@ -175,15 +342,15 @@ Golf lovers can enjoy stunning facilities designed for the entire family.
   </div>
 </div>
 
-<!-- Second Parallax Image with Portfolio Text -->
+<!-- Second Parallax Image with rooms Text -->
 <div class="bgimg-2 w3-display-container ">
   <div class="w3-display-middle">
-    <!-- <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span> -->
+    <!-- <span class="w3-xxlarge w3-text-white w3-wide">rooms</span> -->
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<!-- Container (rooms Section) -->
+<div class="w3-content w3-container w3-padding-64" >
   <h3 class="w3-center">Live The Dream</h3>
   <p class="w3-center"><em>Here are just some of the experiences you will have!</em></p><br>
 
@@ -226,6 +393,170 @@ Golf lovers can enjoy stunning facilities designed for the entire family.
   </div>
 </div>
 
+
+
+<div class="w3-content w3-container w3-padding-64" id="payment">
+
+
+<div class="" >
+  <center><h1>Payments</h1>
+  <p>A non-refundable deposit of $150.00 PER PERSON is required at the time of booking.
+    <br>
+    Any registrations submitted after 02-15-2018 will require a $250.00 PER PERSON deposit at the time of booking.</p>
+</center>
+
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+
+
+    <table class="w3-table w3-striped w3-centered">
+<tr class='w3-blue'>
+  <th>EASY PAYMENT PLAN</th>
+  <th>AMOUNT DUE</th>
+  <!-- <th>Points</th> -->
+</tr>
+<tr>
+  <td>DUE AT REGISTRATION
+    <br>
+      02-15-2018
+    <br>
+      03-15-2018
+    <br>
+      04-16-2018
+  </td>
+  <td>$150.00 PER PERSON*
+    <br>
+
+$150.00 PER PERSON
+    <br>
+
+$150.00 PER PERSON
+    <br>
+    FULL REMAINING BALANCE
+
+
+
+  </td>
+  <!-- <td>50</td> -->
+</tr>
+</table>
+
+<p>*If you select to purchase the Travel Protection Plan, the payment is due at the time of your initial $150.00 per person non-refundable deposit. Please review the pricing information of travel protection below.
+
+FULL ROOM DEPOSIT REQUIRED AT TIME OF BOOKING – meaning if you and roommates are paying separately for one room, the full deposit PER PERSON is required to book the room.
+
+***Any registrations submitted after 02-15-2018 will require a $250.00 PER PERSON deposit at the time of booking.***
+
+*A valid passport is required for each person travelling to Mexico.</p>
+
+<br>
+<br>
+
+<center><h1>Travel Protection Plan</h1>
+
+  <table class="w3-table w3-striped w3-centered">
+  <tr class='w3-blue'>
+  <th>If total booking cost PER ADULT is:</th>
+  <th>Cost PER ADULT</th>
+  <th>Cost PER CHILD 12 and under</th>
+  <!-- <th>Points</th> -->
+  </tr>
+  <tr>
+  <td>UP TO $999.00
+  <br>
+    $1,000 – $1,499.99
+  </td>
+  <td>$59.00
+  <br>
+  $94.00
+</td>
+<td>$30.00
+<br>
+  $50.00
+  <br>
+  </td>
+  <!-- <td>50</td> -->
+  </tr>
+  </table>
+  <p>*If you select to purchase the Travel Protection Plan, the payment is due at the time of your initial $150.00 per person non-refundable deposit.
+<br>
+*A valid passport is required for each person travelling to Mexico.</p>
+
+    </center>
+  </div>
+</div>
+
+
+<div class="bgimg-3 w3-display-container ">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">??</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h1 class="w3-center">FLIGHTS AND TRANSPORTATION</h1>
+
+
+<ul>
+  <li>You are responsible for your transportation to Cancun, MX – airfare is NOT included</li>
+  <li>You must email your flight information to emilyspeers@xstreamtravel.com NO LATER than 04/16/2018 otherwise your transfers may be forfeited and at your own expense.</li>
+  <li>You need to arrive at the Cancun airport (CUN) on the date of your hotel check-in to utilize the included transfer service.</li>
+  <li>The included transfers can ONLY be utilized by those booked as a part of the Cancun Paycation Experience 2018 with Xstream Travel.</li>
+  <li>The included transfers can ONLY be utilized for transportation to/from the CUN airport/Barcelo Maya Complex on your purchased travel dates.</li>
+  <li>A valid passport is required for each person travelling to Mexico.</li>
+</ul>
+
+<br>
+<h1 class="w3-center">IMPORTANT INFORMATION TO KNOW</h1>
+
+<ul>
+  <li>A valid passport is required for each person travelling to Mexico</li>
+  <li>Airfare is NOT included.</li>
+  <li>Travel Protection Plan (Insurance) is optional and MUST be purchased at the time of booking/initial deposit – prices based on total package price, please see the pricing information above.</li>
+  <li>A $25.00 fee will be applied for EACH document replacement for both paper AND e-documents once original documents have been issued.</li>
+  <li>Any reservation changes after final payment date (04/16/2018) will incur a $50.00 change fee per change.</li>
+  <li>Guests booked at the Barcelo Maya Palace have access to all indoor/outdoor facilities across the Barcelo Maya Palace and Tropical/Colonial Hotels.</li>
+</ul>
+
+<br>
+
+<h1 class="w3-center">CANCELLATIONS</h1>
+
+     <p>All payments are non-refundable unless the Travel Protection Plan is purchased at the time of booking. The first deposit is non-refundable.</p>
+    <table class="w3-table w3-striped w3-centered">
+<tr class='w3-blue'>
+  <th>BEGINNING DATE</th>
+  <th>PENALTY AMOUNT</th>
+  <!-- <th>Points</th> -->
+</tr>
+<tr>
+  <td>FIRST DEPOSIT
+    <br>
+      ADDITIONAL PAYMENTS
+    <br>
+
+  </td>
+  <td>NON-REFUNDABLE
+    <br>
+    NON-REFUNDABLE
+    <br>
+  </td>
+</tr>
+</table>
+  </div>
+
+
+  </div>
+
+
+  </div>
+<br>
+
+</div>
+
+
+
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
@@ -235,34 +566,27 @@ Golf lovers can enjoy stunning facilities designed for the entire family.
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container ">
+<!-- Third Parallax Image with rooms Text -->
+<div class="bgimg-4 w3-display-container ">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">Join Us!</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">Registration</h3>
-  <!-- <p class="w3-center"><em>I'd love your feedback!</em></p> -->
+<div class="w3-content w3-container w3-padding-64 w3-center" id="contact">
+  <h1 class="w3-center">Registration</h1>
 
-  <div class="w3-row w3-padding-32 w3-section">
-
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <!-- <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div> -->
-
-    </div>
-    <div class="w3-col m8 w3-panel">
+    <div class="w3-col m8 w3-panel ">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Allen, TX<br>
+
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 214-396-6833<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: emilyspeers@xstreamtravel.com<br>
       </div>
 
       <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-row-padding" style="margin:0 -220px 8px -16px">
+
           <div class="w3-half">
             <input class="w3-input w3-border" type="text" placeholder="First Name" required name=" First Name">
           </div>
@@ -276,33 +600,68 @@ Golf lovers can enjoy stunning facilities designed for the entire family.
             <input class="w3-input w3-border" type="text" placeholder="Phone(XXX-XXX-XXXX)" required name="Phone">
           </div>
           <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Street Address" required name="Street Address">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="City" required name="City">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="State" required name="State">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Zip" required name="Zip">
-          </div>
-          <div class="w3-half">
-            <p class="w3-input w3-border" type="text"required name="Zip"> Room Type
-            </p>
+            <input class="w3-input w3-border" type="text" placeholder="Agent ID #" required name="Agent ID">
           </div>
           <br>
-          <div class="w3-half">
-            <br>
-            <select class="w3-input w3-border" type="text" >
-              <option value="Room 1">Room 1</option>
-              <option value="Room 2">Room 2</option>
-              <option value="Room 3">Room 3</option>
-              <option value="Room 4">Room 4</option>
-            </select>
-          </div>
+
+          <br>
+
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+
+<br>
+
+      <h2>Billing Information</h2>
+        <div class="w3-col m8 w3-panel">
+
+
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -220px 8px -16px">
+
+
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Agent ID #" required name="Agent ID">
+              </div>
+              <br>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Street Address" required name="Street Address">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="City" required name="City">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="State" required name="State">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Zip" required name="Zip">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Total number of ADULTS in rooms" required name="Adults">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Total number of KIDS in rooms" required name="Kids">
+              </div>
+
+              <div class="w3-half">
+                <p class="w3-input w3-border" type="text"required name="Zip"> Room Category Selection
+                </p>
+              </div>
+
+              <div class="w3-half">
+                <br>
+                <select class="w3-input w3-border" type="text" >
+                  <option value="Room 1">Maya Tropical / Colonial - SUPERIOR</option>
+                  <option value="Room 2">Maya Tropical / Colonial - JUNIOR SUITE OCEAN FRONT</option>
+                  <option value="Room 3">Maya Palace - JUNIOR SUITE</option>
+                  <option value="Room 4">Maya Palace - JUNIOR SUITE POOL VIEW</option>
+                  <option value="Room 4">Maya Palace - JUNIOR SUITE OCEAN FRONT</option>
+                </select>
+              </div>
+            </div>
+        <input class="w3-input w3-border" type="text" placeholder="If you are sharing/paying separately, etc.
+GUEST INFO for guests using this card " required name="Message">
         <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
