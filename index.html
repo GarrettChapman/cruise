@@ -6,97 +6,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: black;
-    line-height: 1.8;
-}
+<link rel="stylesheet" href="styles.css">
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('http://www.barcelo.com/en-us/images/246-views-3-hotel-barcelo-maya-colonial_tcm21-35646.jpg');
-    min-height: 100%;
-}
-
-/* Second image (Rooms) */
-.bgimg-2 {
-    background-image: url("http://asiarewards.net/wp-content/uploads/2017/02/1348113_362_z.jpg");
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("file:///Users/zerocool/Downloads/19736339.jpg");
-    min-height: 400px;
-}
-
-.bgimg-4 {
-    background-image: url( "https://images.unsplash.com/photo-1487793932266-b2bb46369926?auto=format&fit=crop&w=1070&q=80");
-    min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
-        background-attachment: scroll;
-    }
-}
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 10px;
-    border: 1px solid #888;
-    width: 60%;
-}
-
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-</style>
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div class="w3-top" ng-app="myApp">
   <div class="w3-bar" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
@@ -178,42 +93,35 @@ Who wouldn’t want to spend a few days in a resort with the Caribbean Sea as th
 
     <h1> Iternerary and Events</h1>
 
-    <table class="w3-table w3-centered w3-bordered w3-border">
-<tr class='w3-light-blue'>
-  <th>Day</th>
-  <th>Events</th>
-  <!-- <th>Points</th> -->
-</tr>
-<tr>
-  <td>Thursday   06/21/2018
-    <br>
-      Friday        06/22/2018
-    <br>
-      Saturday   06/23/2018
-    <br>
-      Sunday      06/24/2018
-  </td>
-  <td>Hotel check-in      3:00pm
-    <br>
-    Meeting                 8:00am – 12:00pm
-    Cocktail Party       7:30pm – 8:
-    <br>
-    Farewell Dinner   7:00pm
-    <br>
-    Hotel check-out   11:00am
 
-
-
-  </td>
-  <!-- <td>50</td> -->
-</tr>
-</table>
+      <table class="w3-table w3-centered w3-bordered w3-border">
+      <tr class='w3-light-blue'>
+        <th>Day</th>
+        <th>Events</th>
+      </tr>
+      <tr>
+        <td>Thursday 06/21/2018</td>
+        <td>Hotel check-in      3:00pm</td>
+      </tr>
+      <tr>
+        <td>  Friday 06/22/2018</td>
+        <td>Meeting                 8:00am – 12:00pm
+        Cocktail Party       7:30pm – 8:00pm</td>
+      </tr>
+      <tr>
+        <td>Saturday 06/23/2018</td>
+        <td>Farewell Dinner   7:00pm</td>
+      </tr>
+      <tr>
+        <td>Sunday 06/24/2018</td>
+        <td>Hotel check-out   11:00am</td>
+      </tr>
+      </table>
   </div>
-
 <br>
 
 
-  <div class=" w3-center  w3-content w3-container w3-padding-64" id="rooms">
+  <div class=" w3-center  w3-content " id="rooms">
     <table class="w3-table w3-striped w3-border">
 <h1>Barcelo Maya Tropical / Colonial</h1>
 <h6>Room Category And Pricing: All Prices Based On Occupancy</h6>
@@ -305,7 +213,7 @@ Who wouldn’t want to spend a few days in a resort with the Caribbean Sea as th
 
 
 
-  <div class="w3-center">
+  <div class="w3-center w3-content">
     <table class="w3-table w3-striped w3-border">
 <h1>Barcelo Maya Palace</h1>
 <h6>Room Category And Pricing: All Prices Based On Occupancy</h6>
@@ -464,19 +372,19 @@ A valid passport is required for each person travelling to Mexico
 <!-- Second Parallax Image with rooms Text -->
 <div class="bgimg-2 w3-display-container ">
   <div class="w3-display-middle">
-    <!-- <span class="w3-xxlarge w3-text-white w3-wide">rooms</span> -->
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
   </div>
 </div>
 
 <!-- Container (rooms Section) -->
 <div class="w3-content w3-container w3-padding-64" >
-  <h3 class="w3-center">Live The Dream</h3>
+  <h2 class="w3-center">Live The Dream</h2>
   <p class="w3-center"><em>Here are just some of the experiences you will have!</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="file:///Users/zerocool/Downloads/111788187.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Surfs Up">
+      <img src="https://images.trvl-media.com/hotels/2000000/1350000/1348200/1348113/9c88c68b_z.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Water Park">
     </div>
 
     <div class="w3-col m3">
@@ -498,7 +406,7 @@ A valid passport is required for each person travelling to Mexico
     </div>
 
     <div class="w3-col m3">
-      <img src="https://images.trvl-media.com/hotels/2000000/1350000/1348200/1348113/1348113_313_z.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Suite">
+      <img src="https://images.trvl-media.com/hotels/2000000/1350000/1348200/1348113/1348113_313_z.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Maya Palace Suite">
     </div>
 
     <div class="w3-col m3">
@@ -506,7 +414,7 @@ A valid passport is required for each person travelling to Mexico
     </div>
 
     <div class="w3-col m3">
-      <img src="file:///Users/zerocool/Downloads/1348114_338_z-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="pool lounge">
+      <img src="https://unofficial-barcelo-maya.com/wp-content/uploads/2017/02/JRsuiteoceanfrontpremiumlevel.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Barcelo Maya Tropical / Colonial Suite">
     </div>
 
   </div>
@@ -517,49 +425,41 @@ A valid passport is required for each person travelling to Mexico
 <div class="w3-content w3-container w3-padding-64" id="payment">
 
 
-<div class="" >
+
   <center><h1>Payments</h1>
   <p>A non-refundable deposit of $150.00 PER PERSON is required at the time of booking.
     <br>
     Any registrations submitted after 02-15-2018 will require a $250.00 PER PERSON deposit at the time of booking.</p>
 </center>
 
-</div>
-
-<div class="w3-content w3-container w3-padding-64" id="about">
 
 
-    <table class="w3-table w3-striped w3-centered w3-border">
-<tr class="w3-light-blue">
+<!-- <div class="w3-content w3-container w3-padding-64" id="about"> -->
+
+
+<table class="w3-table w3-centered w3-bordered w3-border">
+<tr class='w3-light-blue'>
   <th>EASY PAYMENT PLAN</th>
   <th>AMOUNT DUE</th>
-  <!-- <th>Points</th> -->
 </tr>
 <tr>
-  <td>DUE AT REGISTRATION
-    <br>
-      02-15-2018
-    <br>
-      03-15-2018
-    <br>
-      04-16-2018
-  </td>
-  <td>$150.00 PER PERSON*
-    <br>
-
-$150.00 PER PERSON
-    <br>
-
-$150.00 PER PERSON
-    <br>
-    FULL REMAINING BALANCE
-
-
-
-  </td>
-  <!-- <td>50</td> -->
+  <td>DUE AT REGISTRATION</td>
+  <td>$150.00 PER PERSON* </td>
+</tr>
+<tr>
+  <td>02-15-2018 </td>
+  <td>$150.00 PER PERSON </td>
+</tr>
+<tr>
+  <td>03-15-2018 </td>
+  <td>$150.00 PER PERSON </td>
+</tr>
+<tr>
+  <td>04-16-2018</td>
+  <td>FULL REMAINING BALANCE</td>
 </tr>
 </table>
+
 
 <p>*If you select to purchase the Travel Protection Plan, the payment is due at the time of your initial $150.00 per person non-refundable deposit. Please review the pricing information of travel protection below.
 
@@ -574,39 +474,35 @@ FULL ROOM DEPOSIT REQUIRED AT TIME OF BOOKING – meaning if you and roommates a
 
 <center><h1>Travel Protection Plan</h1>
 
-  <table class="w3-table w3-striped w3-centered w3-border">
-  <tr class="w3-light-blue">
-  <th>If total booking cost PER ADULT is:</th>
-  <th>Cost PER ADULT</th>
-  <th>Cost PER CHILD 12 and under</th>
-  <!-- <th>Points</th> -->
+  <table class="w3-table w3-centered w3-bordered w3-border">
+  <tr class='w3-light-blue'>
+    <th>If total booking cost PER ADULT is:</th>
+    <th>Cost PER ADULT</th>
+    <th>Cost PER CHILD 12 and under</th>
   </tr>
   <tr>
-  <td>UP TO $999.00
-  <br>
-    $1,000 – $1,499.99
-  </td>
-  <td>$59.00
-  <br>
-  $94.00
-</td>
-<td>$30.00
-<br>
-  $50.00
-  <br>
-  </td>
-  <!-- <td>50</td> -->
+    <td>UP TO $999.00 </td>
+    <td>$59.00  </td>
+    <td>$30.00</td>
   </tr>
+  <tr>
+    <td>$1,000 – $1,499.99 </td>
+    <td>$94.00</td>
+    <td>$50.00 </td>
+  </tr>
+
   </table>
   <p>*If you select to purchase the Travel Protection Plan, the payment is due at the time of your initial $150.00 per person non-refundable deposit.
 <br>
+<br>
 *A valid passport is required for each person travelling to Mexico.</p>
 
-    </center>
+      </center>
+    <!-- </div> -->
   </div>
 </div>
 
-
+<div class="">
 <div class="bgimg-3 w3-display-container ">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">??</span>
@@ -668,8 +564,6 @@ FULL ROOM DEPOSIT REQUIRED AT TIME OF BOOKING – meaning if you and roommates a
 
   </div>
 
-
-  </div>
 <br>
 
 </div>
@@ -792,7 +686,7 @@ GUEST INFO for guests using this card " required name="Message">
 
 <!-- Footer -->
 <footer class="w3-center w3-light-blue w3-padding-24 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up "></i>To the top</a>
 
 </footer>
 
@@ -868,7 +762,9 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
 </script>
+<script src="./app.js" charset="utf-8"></script>
 
 </body>
 </html>
