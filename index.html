@@ -36,7 +36,7 @@ body, html {
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("file:///Users/zerocool/Library/Containers/com.apple.mail/Data/Library/Mail%20Downloads/31AB4A71-E33C-4C42-8050-171E26B4E5A2/246-views-3-hotel-barcelo-maya-colonial_tcm21-35646.jpg");
+    background-image: url("file:///Users/zerocool/Downloads/19736339.jpg");
     min-height: 400px;
 }
 
@@ -53,6 +53,44 @@ body, html {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
         background-attachment: scroll;
     }
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 </style>
 <body>
@@ -141,7 +179,7 @@ Who wouldn’t want to spend a few days in a resort with the Caribbean Sea as th
     <h1> Iternerary and Events</h1>
 
     <table class="w3-table w3-centered w3-bordered w3-border">
-<tr class='w3-blue'>
+<tr class='w3-light-blue'>
   <th>Day</th>
   <th>Events</th>
   <!-- <th>Points</th> -->
@@ -179,7 +217,7 @@ Who wouldn’t want to spend a few days in a resort with the Caribbean Sea as th
     <table class="w3-table w3-striped w3-border">
 <h1>Barcelo Maya Tropical / Colonial</h1>
 <h6>Room Category And Pricing: All Prices Based On Occupancy</h6>
-<tr class='w3-blue'>
+<tr class="w3-light-blue">
   <th>Room Category</th>
   <th>Single (1 ADULT)</th>
   <th>Double (2 ADULTS)</th>
@@ -234,7 +272,7 @@ Who wouldn’t want to spend a few days in a resort with the Caribbean Sea as th
     <table class="w3-table w3-striped w3-border">
 <h1>Barcelo Maya Palace</h1>
 <h6>Room Category And Pricing: All Prices Based On Occupancy</h6>
-<tr class='w3-blue'>
+<tr class="w3-light-blue">
   <th>Room Category</th>
   <th>Single (1 ADULT)</th>
   <th>Double (2 ADULTS)</th>
@@ -296,6 +334,43 @@ Who wouldn’t want to spend a few days in a resort with the Caribbean Sea as th
 
 
 </table>
+<br>
+<button id="myBtn">Premium Amenities</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>The Following service - and more - are included:
+<ul>
+  <li>Personalized check-in and check-out in the exclusive Premium Level area</li>
+  <li>Exclusive concierge service for Premium Level guests</li>
+  <li>Room with the best views in the Premium Level area</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+    </p>
+  </div>
+
+</div>
+
   </div>
 <br>
   <div class="">
@@ -392,9 +467,8 @@ A valid passport is required for each person travelling to Mexico
     </div>
 
     <div class="w3-col m3">
-      <img src="http://static.panoramio.com/photos/large/4949368.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="pool lounge">
+      <img src="file:///Users/zerocool/Downloads/1348114_338_z-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="pool lounge">
     </div>
-
   </div>
 </div>
 
@@ -416,7 +490,7 @@ A valid passport is required for each person travelling to Mexico
 
 
     <table class="w3-table w3-striped w3-centered w3-border">
-<tr class='w3-blue'>
+<tr class="w3-light-blue">
   <th>EASY PAYMENT PLAN</th>
   <th>AMOUNT DUE</th>
   <!-- <th>Points</th> -->
@@ -461,7 +535,7 @@ FULL ROOM DEPOSIT REQUIRED AT TIME OF BOOKING – meaning if you and roommates a
 <center><h1>Travel Protection Plan</h1>
 
   <table class="w3-table w3-striped w3-centered w3-border">
-  <tr class='w3-blue'>
+  <tr class="w3-light-blue">
   <th>If total booking cost PER ADULT is:</th>
   <th>Cost PER ADULT</th>
   <th>Cost PER CHILD 12 and under</th>
@@ -530,7 +604,7 @@ FULL ROOM DEPOSIT REQUIRED AT TIME OF BOOKING – meaning if you and roommates a
 
      <p>All payments are non-refundable unless the Travel Protection Plan is purchased at the time of booking. The first deposit is non-refundable.</p>
     <table class="w3-table w3-striped w3-centered w3-border">
-<tr class='w3-blue'>
+<tr class="w3-light-blue">
   <th>BEGINNING DATE</th>
   <th>PENALTY AMOUNT</th>
   <!-- <th>Points</th> -->
@@ -663,66 +737,8 @@ GUEST INFO for guests using this card " required name="Message">
 <i class="fa fa-paper-plane"></i> SUBMIT
 </button>
 </form>
-</div> -->
+</div>
 
-
-      <!-- <h2>Billing Information</h2>
-        <div class="w3-col m8 w3-panel">
-
-
-          <form action="/action_page.php" target="_blank">
-            <div class="w3-row-padding" style="margin:0 16px 8px 16px">
-
-
-              <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-              </div>
-              <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Agent ID #" required name="Agent ID">
-              </div>
-              <br>
-              <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Street Address" required name="Street Address">
-              </div>
-              <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="City" required name="City">
-              </div>
-              <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="State" required name="State">
-              </div>
-              <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Zip" required name="Zip">
-              </div>
-              <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Total number of ADULTS in rooms" required name="Adults">
-              </div>
-              <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Total number of KIDS in rooms" required name="Kids">
-              </div>
-
-              <div class="w3-half">
-                <p class="w3-input w3-border" type="text"required name="Room"> Room Category Selection
-                </p>
-              </div>
-
-              <div class="w3-half">
-                <br>
-                <select class="w3-input w3-border" type="text" >
-                  <option value="Room 1">Maya Tropical / Colonial - SUPERIOR</option>
-                  <option value="Room 2">Maya Tropical / Colonial - JUNIOR SUITE OCEAN FRONT</option>
-                  <option value="Room 3">Maya Palace - JUNIOR SUITE</option>
-                  <option value="Room 4">Maya Palace - JUNIOR SUITE POOL VIEW</option>
-                  <option value="Room 4">Maya Palace - JUNIOR SUITE OCEAN FRONT</option>
-                </select>
-              </div>
-            </div>
-        <input class="w3-input w3-border" type="text" placeholder="If you are sharing/paying separately, etc.
-GUEST INFO for guests using this card " required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SUBMIT
-        </button>
-      </form>
-    </div> -->
   </div>
 
 
@@ -735,7 +751,7 @@ GUEST INFO for guests using this card " required name="Message">
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-blue w3-padding-24 w3-opacity w3-hover-opacity-off">
+<footer class="w3-center w3-light-blue w3-padding-24 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 
 </footer>
@@ -784,6 +800,32 @@ function toggleFunction() {
         x.className += " w3-show";
     } else {
         x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }
 </script>
