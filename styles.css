@@ -17,19 +17,20 @@ body, html {
 .bgimg-1 {
     background-image: url('http://www.barcelo.com/en-us/images/246-views-3-hotel-barcelo-maya-colonial_tcm21-35646.jpg');
     min-height: 100%;
-    max-width: 100vw;
+    /*max-width: 100vw;*/
 }
 
 /* Second image (Rooms) */
 .bgimg-2 {
     background-image: url("http://asiarewards.net/wp-content/uploads/2017/02/1348113_362_z.jpg");
     min-height: 400px;
+
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
     background-image: url("https://www.barcelo.com/en-us/images/246-swimming-pool-5-hotel-barcelo-maya-colonial_tcm21-126726.jpg");
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .bgimg-4 {
@@ -71,15 +72,16 @@ body, html {
 }
 
 /* The Close Button */
-.close {
+.close, .close1 {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+
+.close:hover, .close1:hover,
+.close:focus, .close1:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
