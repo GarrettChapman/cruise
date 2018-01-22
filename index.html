@@ -41,21 +41,22 @@
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container " id="home">
-  <div class="w3-display-middle  w3-animate-opacity" style="white-space:nowrap;">
-    <!-- <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span> -->
-<img src="https://commonmedia.asicentral.com/2990000/2992207/2015-09-17-Xstream-Travel-Logo.png" class="w3-center w3-padding-large w3-#00000014 w3-border-radius
-     w3-xlarge w3-wide w3-animate-opacity" alt="">
-     <!-- <img src="file:///Users/zerocool/Downloads/14e5d9b0-15f5-469a-a28b-fddbc614edcf.png" class="w3-center w3-padding-large w3-#00000014 w3-border-radius
-      w3-xlarge w3-wide w3-animate-opacity" alt=""> -->
+  <div class="w3-display-middle  w3-animate-opacity w3-light-gray w3-large" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity ">Paycation <span class="w3-hide-small">Experience</span> 2018</span>
   </div>
+  <br>
+  <br>
+  <br>
+  <img src="http://traverusglobal.com/assets/img/TraVerusGlobal_logo.png" class="w3-center w3-padding-large w3-#00000014 w3-border-radius
+       w3-xlarge w3-wide w3-animate-opacity w3-hide-small" alt="">
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64 w3-center " id="about">
   <h1 class="w3-center">Trip Information</h1>
   <!-- <p class="w3-center"><em>I love photography</em></p> -->
-  <p>Cancun Paycation Experience 2018 | Barcelo Maya Palace and Barcelo Maya Colonial and Tropical – Riviera Maya, QR, Mexico
-    <br> Date: 06/21/2018 - 06/24/2018 | Duration: 3 nights</p>
+  <h5>Cancun Paycation Experience 2018 | Barcelo Maya Palace and Barcelo Maya Colonial and Tropical – Riviera Maya, QR, Mexico
+    <br> Date: 06/21/2018 - 06/24/2018 | Duration: 3 nights</h5>
 
 <br>
 <br>
@@ -179,13 +180,13 @@ Who wouldn’t want to spend a few days in a resort with the Caribbean Sea as th
 
 </table>
 <br>
-<button id="myBtn">Premium Amenities - Click Here</button>
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black" id="myBtn">Premium Amenities - Click Here</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
+  <div class="modal-content w3-animate-top w3-card-4">
     <span class="close">&times;</span>
     <p>The Following service - and more - are included:
 <ul>
@@ -287,13 +288,13 @@ Who wouldn’t want to spend a few days in a resort with the Caribbean Sea as th
 
 </table>
 <br>
-<button id="myBtn1">Premium Amenities - Click Here</button>
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black" id="myBtn1">Premium Amenities - Click Here</button>
 
 <!-- The Modal -->
 <div id="myModal1" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
+  <div class="modal-content w3-animate-top w3-card-4">
     <span class="close1">&times;</span>
     <p>The Following service - and more - are included:
 <ul>
@@ -675,9 +676,12 @@ FULL ROOM DEPOSIT REQUIRED AT TIME OF BOOKING – meaning if you and roommates a
   </select>
 </div>
 </div>
-<input class="w3-input w3-border" type="text" placeholder="If you are sharing/paying separately, etc.
-GUEST INFO for guests using this card " required name="Message">
+<!-- <input class="w3-input w3-border" type="text" placeholder="If you are sharing/paying separately, etc.
+GUEST INFO for guests using this card " required name="Message"> -->
 
+<h4>If you are sharing/paying separately, etc.
+  <br>
+GUEST INFO for guests using this card </h4>
 <br>
 
 <div class="">
@@ -734,7 +738,7 @@ GUEST INFO for guests using this card " required name="Message">
 </div>
 <br>
 
-<div class="">
+<div class="w3-left">
 
 <p>
   *By submitting my registration form I acknowledge that I have read and understand all cancellation penalties and administration fees that I will incur, should I decide to cancel my reservation.
