@@ -615,7 +615,7 @@ FULL ROOM DEPOSIT REQUIRED AT TIME OF BOOKING – meaning if you and roommates a
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: emilyspeers@xstreamtravel.com<br>
       </div>
 
-      <form action="https://formspree.io/emilyxstream@yahoo.com"
+      <form action="https://formspree.io/garrett.chapman@yahoo.com"
       method="POST" >
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
 
@@ -686,7 +686,7 @@ FULL ROOM DEPOSIT REQUIRED AT TIME OF BOOKING – meaning if you and roommates a
     <option value="Maya Tropical / Colonial - JUNIOR SUITE OCEAN FRONT"> Maya Tropical / Colonial - JUNIOR SUITE OCEAN FRONT</option>
     <option value="Maya Palace - JUNIOR SUITE"> Maya Palace - JUNIOR SUITE</option>
     <option value="Maya Palace - JUNIOR SUITE POOL VIEW"> Maya Palace - JUNIOR SUITE POOL VIEW</option>
-    <option value=">Maya Palace - JUNIOR SUITE OCEAN FRONT" > Maya Palace - JUNIOR SUITE OCEAN FRONT</option>
+    <!-- <option value=">Maya Palace - JUNIOR SUITE OCEAN FRONT" > Maya Palace - JUNIOR SUITE OCEAN FRONT</option> -->
   </select>
 
 </div>
@@ -770,13 +770,21 @@ GUEST INFO for guests using this card " required name="Message"> -->
 
 <br>
 <h4>Card Information</h4>
-<h6>VISA AND MASTERCARD ONLY</h6>
+<h6>*At this time we only accept Visa and MasterCard for payment.</h6>
 
 <div>
 <input class="w3-input w3-border" type="text" placeholder="Name on Credit Card" required name="Name on CC">
 </div>
 <div class="">
-<input class="w3-input w3-border" type="text" placeholder="Credit Card Number" required name="CC Number">
+<input class="w3-input w3-border" type="text" size="24" maxlength="20" placeholder="Credit Card Number" required name="CC Number"  onblur="
+
+  cc_number_saved = this.value;
+  this.value = this.value.replace(/[^\d]/g, '');
+" onfocus="if(this.value != cc_number_saved) this.value = cc_number_saved;">
+
+
+
+
 </div>
 <div class="">
 <input class="w3-input w3-border" type="text" placeholder="Credit Card Expiration Date (MM/YY)" required name="CC Exp.">
@@ -858,6 +866,36 @@ GUEST INFO for guests using this card " required name="Message"> -->
 //   marker.setMap(map);
 // }
 
+// takes the form field value and returns true on valid number
+// function valid_credit_card(value) {
+//   // accept only digits, dashes or spaces
+// 	if (/[^0-9-\s]+/.test(value)) return false;
+//
+// 	// The Luhn Algorithm. It's so pretty.
+// 	var nCheck = 0, nDigit = 0, bEven = false;
+// 	value = value.replace(/\D/g, "");
+//
+// 	for (var n = value.length - 1; n >= 0; n--) {
+// 		var cDigit = value.charAt(n),
+// 			  nDigit = parseInt(cDigit, 10);
+//
+// 		if (bEven) {
+// 			if ((nDigit *= 2) > 9) nDigit -= 9;
+// 		}
+//
+// 		nCheck += nDigit;
+// 		bEven = !bEven;
+// 	}
+//
+// 	return (nCheck % 10) == 0;
+// }
+
+
+// var card = CardValidate('xxxxxxxxxxxxxxxx');
+// var cardvalidate = require('card'),
+// 	card = cardvalidate('xxxxxxxxxxxxxxxx');
+
+
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -886,6 +924,8 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+
 
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -933,6 +973,7 @@ window.onclick = function(event) {
 
 </script>
 <script src="./img/high-res.png" charset="utf-8"></script>
+<!-- <script src="card.min.js"></script> -->
 
 
 </body>
