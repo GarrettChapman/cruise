@@ -29,7 +29,7 @@ body, html {
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("https://www.barcelo.com/en-us/images/246-swimming-pool-5-hotel-barcelo-maya-colonial_tcm21-126726.jpg");
+    background-image: url("/img/barceloBackground.jpg");
     min-height: 500px;
 }
 
